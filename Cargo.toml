@@ -7,6 +7,8 @@ authors = ["Ananth Prathap <22am014@sctce.ac.in>"]
 repository = "https://github.com/KekmaTime/commit-checker"
 license = "MIT"
 keywords = ["git", "commit", "hook", "github"]
+categories = ["development-tools::build-utils", "command-line-utilities"]
+readme = "README.md"
 
 [[bin]]
 name = "commit-checker"
