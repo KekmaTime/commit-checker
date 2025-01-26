@@ -1,0 +1,22 @@
+[package]
+name = "commit-checker"
+version = "0.1.0"
+edition = "2021"
+description = "A Git pre-commit hook tool that ensures daily commit requirements"
+authors = ["Ananth Prathap <22am014@sctce.ac.in>"]
+repository = "https://github.com/KekmaTime/commit-checker"
+license = "MIT"
+keywords = ["git", "commit", "hook", "github"]
+
+[[bin]]
+name = "commit-checker"
+path = "src/main.rs"
+
+[dependencies]
+dirs = "6.0"
+octocrab = "0.43.0"
+tokio = { version = "1.36", features = ["full"] }
+chrono = "0.4"
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+dotenv = "0.15"
